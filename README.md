@@ -13,7 +13,7 @@ I'm currently studying **Data Structures and Algorithms** using Java. I'm passio
 
 - **Languages**: Java, Python
 - **Tools**: Git, GitHub, IntelliJ IDEA, VS Code, Pycharm
-- **Other Interests**: Exploring C#, WPF technology, and learning front-end development. (Beginner Level)
+- **Other Interests**: Exploring Kotlin
 
 ## 📫 How to Reach Me
 

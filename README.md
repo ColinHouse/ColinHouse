@@ -37,7 +37,7 @@ Pull requests merged into other people's projects.<br>
 | [**langgenius/dify**](https://github.com/langgenius/dify)&nbsp;<sub>★&nbsp;158k</sub> | [3](https://github.com/langgenius/dify/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [refactor(files): dep-inject query params with @model_validate](https://github.com/langgenius/dify/pull/42314) |
 | [**sqlfluff/sqlfluff**](https://github.com/sqlfluff/sqlfluff)&nbsp;<sub>★&nbsp;9.9k</sub> | [1](https://github.com/sqlfluff/sqlfluff/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [Add sparksql fixtures for CREATE TEMPORARY TABLE with a USING provider](https://github.com/sqlfluff/sqlfluff/pull/8656) |
 | [**MaaXYZ/MaaFramework**](https://github.com/MaaXYZ/MaaFramework)&nbsp;<sub>★&nbsp;5.0k</sub> | [1](https://github.com/MaaXYZ/MaaFramework/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(python): 修复绑定初始化的线程竞态导致并发连接失败 (#629)](https://github.com/MaaXYZ/MaaFramework/pull/1490) |
-| [**AUTO-MAS-Project/AUTO-MAS**](https://github.com/AUTO-MAS-Project/AUTO-MAS)&nbsp;<sub>★&nbsp;703</sub> | [3](https://github.com/AUTO-MAS-Project/AUTO-MAS/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(bettergi): 单个 JS 脚本的 manifest.json 坏了不再让整个脚本列表拿不到](https://github.com/AUTO-MAS-Project/AUTO-MAS/pull/783) |
+| [**AUTO-MAS-Project/AUTO-MAS**](https://github.com/AUTO-MAS-Project/AUTO-MAS)&nbsp;<sub>★&nbsp;707</sub> | [3](https://github.com/AUTO-MAS-Project/AUTO-MAS/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(bettergi): 单个 JS 脚本的 manifest.json 坏了不再让整个脚本列表拿不到](https://github.com/AUTO-MAS-Project/AUTO-MAS/pull/783) |
 <!-- upstream:end -->
 
 ## Activity · 动态

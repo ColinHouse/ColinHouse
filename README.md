@@ -84,6 +84,12 @@
 ## ⚡ Recent Activity · 最近动态
 
 <!--START_SECTION:activity-->
+1. 💪 Opened PR [#92](https://github.com/ColinHouse/Sprig/pull/92) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
+2. 💪 Opened PR [#91](https://github.com/ColinHouse/Sprig/pull/91) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
+3. ℹ️ Labeled issue [#90](https://github.com/ColinHouse/Sprig/issues/90) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
+4. ℹ️ Labeled issue [#90](https://github.com/ColinHouse/Sprig/issues/90) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
+5. ❗ Opened issue [#90](https://github.com/ColinHouse/Sprig/issues/90) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
+6. 🎉 Merged PR [#89](https://github.com/ColinHouse/Sprig/pull/89) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
 <!--END_SECTION:activity-->
 
 ---

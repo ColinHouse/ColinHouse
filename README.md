@@ -5,7 +5,7 @@
 **Backend / web engineer in Tokyo. I build languages, APIs and tools.**<br>
 在东京读研的后端工程师，造语言、写 API、做工具。
 
-[ORCID](https://orcid.org/0009-0005-2312-1336) · [Sprig docs](https://colinhouse.github.io/Sprig/) · [kotobako docs](https://colinhouse.github.io/kotobako/)
+[ORCID](https://orcid.org/0009-0005-2312-1336) · [Sprig docs](https://colinhouse.github.io/Sprig/)
 
 </div>
 
@@ -22,9 +22,8 @@
 ## Projects · 代表项目
 
 <p align="center">
-  <a href="https://github.com/ColinHouse/Sprig"><img src="assets/sprig.svg" width="272" alt="Sprig: a statically typed JVM language for people and coding agents. Less to guess, easier to review."></a>
-  <a href="https://github.com/ColinHouse/kotobako"><img src="assets/kotobako.svg" width="272" alt="kotobako: a context-keeping Japanese reading companion with screenshot and audio capture and FSRS review."></a>
-  <a href="https://github.com/ColinHouse/personal_ledger_api"><img src="assets/ledger.svg" width="272" alt="Personal Ledger API: a household-ledger REST API with accounts, categories, records and monthly budgets."></a>
+  <a href="https://github.com/ColinHouse/Sprig"><img src="assets/sprig.svg" width="412" alt="Sprig: a statically typed JVM language for people and coding agents. Less to guess, easier to review."></a>
+  <a href="https://github.com/ColinHouse/personal_ledger_api"><img src="assets/ledger.svg" width="412" alt="Personal Ledger API: a household-ledger REST API with accounts, categories, records and monthly budgets."></a>
 </p>
 
 ## Open source · 开源贡献

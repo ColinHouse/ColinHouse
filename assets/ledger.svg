@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="272" height="338" viewBox="0 0 272 338" role="img" aria-label="Personal Ledger API: A household-ledger REST API: accounts, categories, records and monthly budgets.">
+<svg xmlns="http://www.w3.org/2000/svg" width="412" height="318" viewBox="0 0 412 318" role="img" aria-label="Personal Ledger API: A household-ledger REST API: accounts, categories, records and monthly budgets.">
 <title>Personal Ledger API: A household-ledger REST API: accounts, categories, records and monthly budgets.</title>
 <style>
 :root{--surface:#fbf9f5;--panel:#f1ede4;--border:#e2dbce;--ink:#1f2a44;--text:#414a63;--muted:#7d8497;--blue:#3b58a8;--sand:#a8753f;--tile:#ffffff;--sky0:#4463b8;--sky1:#324d98}@media (prefers-color-scheme:dark){:root{--surface:#131a2c;--panel:#19223b;--border:#283355;--ink:#f0eadf;--text:#c3cadb;--muted:#8790a7;--blue:#8fa8f0;--sand:#dbb488;--tile:#222d4d;--sky0:#34509c;--sky1:#243a78}}
@@ -17,16 +17,16 @@ circle.in,.amount.in{fill:var(--blue)}circle.out{fill:var(--sand)}
 .rule{stroke:var(--border)}
 .total{font-weight:700;fill:var(--ink)}
 </style>
-<defs><clipPath id="top"><path d="M0 12a12 12 0 0 1 12-12h248a12 12 0 0 1 12 12v116H0z"/></clipPath></defs>
-<rect class="card" x=".5" y=".5" width="271" height="337" rx="12"/>
-<g clip-path="url(#top)"><rect class="art" x="1" y="1" width="270" height="127"/>
-<g lang="ja"><circle class="in" cx="28" cy="33" r="2.6"/><text class="label" x="38" y="37">給料</text><text class="amount in" x="246" y="37">+280,000</text><path class="rule" d="M24 45H248"/><circle class="out" cx="28" cy="55" r="2.6"/><text class="label" x="38" y="59">食費</text><text class="amount out" x="246" y="59">−3,200</text><path class="rule" d="M24 67H248"/><circle class="out" cx="28" cy="77" r="2.6"/><text class="label" x="38" y="81">交通費</text><text class="amount out" x="246" y="81">−480</text><path class="rule" d="M24 89H248"/><text class="label total" x="24" y="112">残高</text><text class="amount total" x="246" y="112">¥276,320</text></g></g>
-<path class="rule" d="M1 128H271"/>
+<defs><clipPath id="top"><path d="M0 12a12 12 0 0 1 12-12h388a12 12 0 0 1 12 12v116H0z"/></clipPath></defs>
+<rect class="card" x=".5" y=".5" width="411" height="317" rx="12"/>
+<g clip-path="url(#top)"><rect class="art" x="1" y="1" width="410" height="127"/>
+<g lang="ja"><circle class="in" cx="28" cy="33" r="2.6"/><text class="label" x="38" y="37">給料</text><text class="amount in" x="388" y="37">+280,000</text><path class="rule" d="M24 45H388"/><circle class="out" cx="28" cy="55" r="2.6"/><text class="label" x="38" y="59">食費</text><text class="amount out" x="388" y="59">−3,200</text><path class="rule" d="M24 67H388"/><circle class="out" cx="28" cy="77" r="2.6"/><text class="label" x="38" y="81">交通費</text><text class="amount out" x="388" y="81">−480</text><path class="rule" d="M24 89H388"/><text class="label total" x="24" y="112">残高</text><text class="amount total" x="388" y="112">¥276,320</text></g></g>
+<path class="rule" d="M1 128H411"/>
 <text class="kicker" x="20" y="157">API · SPRING BOOT</text>
 <text class="name" x="20" y="186">Personal Ledger API</text>
-<path class="go" d="M244 158l8-8m-6.5 0h6.5v6.5"/>
-<text class="en" x="20" y="212">A household-ledger REST API:</text><text class="en" x="20" y="230">accounts, categories, records</text><text class="en" x="20" y="248">and monthly budgets.</text>
-<g lang="zh-Hans"><text class="zh" x="20" y="273">Spring Boot + MyBatis-Plus</text><text class="zh" x="20" y="290">实现的家計簿 API。</text></g>
-<circle cx="24.5" cy="313" r="4.5" fill="#b07219"/>
-<text class="meta" x="35" y="317">Java<tspan dx="10">MySQL · Docker</tspan></text>
+<path class="go" d="M384 158l8-8m-6.5 0h6.5v6.5"/>
+<text class="en" x="20" y="212">A household-ledger REST API: accounts, categories,</text><text class="en" x="20" y="230">records and monthly budgets.</text>
+<g lang="zh-Hans"><text class="zh" x="20" y="255">Spring Boot + MyBatis-Plus 实现的家計簿 API。</text></g>
+<circle cx="24.5" cy="293" r="4.5" fill="#b07219"/>
+<text class="meta" x="35" y="297">Java<tspan dx="10">MySQL · Docker</tspan></text>
 </svg>

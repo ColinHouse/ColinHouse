@@ -30,6 +30,7 @@ SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',
 SERIF = "Georgia,'Times New Roman',Times,serif"
 MONO = "ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace"
 KANA = f"'Hiragino Sans','Yu Gothic','Noto Sans CJK JP','Noto Sans JP',{SANS}"
+CARD_W = 412
 
 # Blue and cream are sampled from the avatar; the rest is derived from them.
 # Each figure is one SVG that carries both palettes and switches on
@@ -267,45 +268,19 @@ def art_code() -> tuple[str, str]:
             f'<tspan class="{kind}">{escape(text)}</tspan>' if kind else escape(text)
             for kind, text in tokens
         )
-        lines.append(f'<text x="20" y="{num(31 + i * 14.2)}" xml:space="preserve">{spans}</text>')
+        lines.append(f'<text x="24" y="{num(32 + i * 15)}" xml:space="preserve">{spans}</text>')
     css = f"""
-.code{{font:10px {MONO};fill:var(--text);white-space:pre}}
+.code{{font:11px {MONO};fill:var(--text);white-space:pre}}
 .k{{fill:var(--blue);font-weight:700}}.t{{fill:var(--ink)}}.p{{fill:var(--muted)}}
 .fade0{{stop-color:var(--panel);stop-opacity:0}}.fade1{{stop-color:var(--panel)}}
 """
     body = f"""
 <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="fade0"/><stop offset="1" class="fade1"/></linearGradient>
 <g class="code">{"".join(lines)}</g>
-<rect y="88" width="272" height="40" fill="url(#fade)"/>
+<rect y="88" width="{CARD_W}" height="40" fill="url(#fade)"/>
 """
     return css, body
 
-
-def art_tiles() -> tuple[str, str]:
-    tiles = []
-    for i, (kana, turn) in enumerate(zip("ことばこ", (-4, 3, -3, 4))):
-        cx, cy = 58 + i * 52, 52
-        hot = " hot" if i == 2 else ""
-        tiles.append(
-            f'<g class="tile{hot}" transform="rotate({turn} {cx} {cy})">'
-            f'<rect class="shade" x="{cx - 21}" y="{cy - 23}" width="42" height="50" rx="8"/>'
-            f'<rect class="face" x="{cx - 21}" y="{cy - 26}" width="42" height="50" rx="8"/>'
-            f'<text x="{cx}" y="{cy + 7}">{kana}</text></g>'
-        )
-    # review dates drift apart, the way a spaced-repetition schedule does
-    dots = "".join(
-        f'<circle class="{"done" if i < 3 else "due"}" cx="{x}" cy="103" r="3.2"/>'
-        for i, x in enumerate((37, 47, 63, 89, 131, 199))
-    )
-    css = f"""
-.tile text{{font:600 24px {KANA};text-anchor:middle;fill:var(--ink)}}
-.shade{{fill:var(--border)}}.face{{fill:var(--tile);stroke:var(--border)}}
-.hot .face{{fill:var(--blue);stroke:var(--blue)}}.hot text{{fill:var(--surface)}}
-.line{{stroke:var(--border);stroke-width:1.4}}
-.done,.due{{stroke:var(--blue);stroke-width:1.4}}.done{{fill:var(--blue)}}.due{{fill:var(--panel);stroke-opacity:.55}}
-"""
-    body = f'<g lang="ja">{"".join(tiles)}</g><path class="line" d="M37 103H235"/>{dots}'
-    return css, body
 
 
 def art_ledger() -> tuple[str, str]:
@@ -316,8 +291,8 @@ def art_ledger() -> tuple[str, str]:
         out.append(
             f'<circle class="{kind}" cx="28" cy="{y - 4}" r="2.6"/>'
             f'<text class="label" x="38" y="{y}">{label}</text>'
-            f'<text class="amount {kind}" x="246" y="{y}">{amount}</text>'
-            f'<path class="rule" d="M24 {y + 8}H248"/>'
+            f'<text class="amount {kind}" x="{CARD_W - 24}" y="{y}">{amount}</text>'
+            f'<path class="rule" d="M24 {y + 8}H{CARD_W - 24}"/>'
         )
     css = f"""
 .label{{font:11.5px {KANA};fill:var(--text)}}
@@ -329,7 +304,7 @@ circle.in,.amount.in{{fill:var(--blue)}}circle.out{{fill:var(--sand)}}
     body = (
         f'<g lang="ja">{"".join(out)}'
         '<text class="label total" x="24" y="112">残高</text>'
-        '<text class="amount total" x="246" y="112">¥276,320</text></g>'
+        f'<text class="amount total" x="{CARD_W - 24}" y="112">¥276,320</text></g>'
     )
     return css, body
 
@@ -340,28 +315,18 @@ CARDS = [
         "art": art_code,
         "kicker": "LANGUAGE · JVM",
         "name": "Sprig",
-        "en": ["A statically typed JVM language", "for people and coding agents:", "less to guess, easier to review."],
-        "zh": ["面向人和编码 Agent 的 JVM 静态类型", "语言：少一点猜测，方便审查。"],
+        "en": ["A statically typed JVM language for people and", "coding agents: less to guess, easier to review."],
+        "zh": ["面向人和编码 Agent 的 JVM 静态类型语言：", "少一点猜测，方便审查。"],
         "lang": "Java",
         "tags": "ANTLR4 · Fabric",
-    },
-    {
-        "file": "kotobako",
-        "art": art_tiles,
-        "kicker": "APP · LOCAL-FIRST",
-        "name": "kotobako",
-        "en": ["A context-keeping Japanese", "reading companion: screenshot", "+ audio capture, FSRS review."],
-        "zh": ["会记住语境的日语伴读工具：", "截图 + 原声收藏台词，FSRS 复习。"],
-        "lang": "Python",
-        "tags": "FastAPI · Vue 3 · PWA",
     },
     {
         "file": "ledger",
         "art": art_ledger,
         "kicker": "API · SPRING BOOT",
         "name": "Personal Ledger API",
-        "en": ["A household-ledger REST API:", "accounts, categories, records", "and monthly budgets."],
-        "zh": ["Spring Boot + MyBatis-Plus", "实现的家計簿 API。"],
+        "en": ["A household-ledger REST API: accounts, categories,", "records and monthly budgets."],
+        "zh": ["Spring Boot + MyBatis-Plus 实现的家計簿 API。"],
         "lang": "Java",
         "tags": "MySQL · Docker",
     },
@@ -369,10 +334,10 @@ CARDS = [
 
 
 def card(spec: dict) -> str:
-    width, height = 272, 338
+    width, height = CARD_W, 318
     art_css, art = spec["art"]()
     en = "".join(f'<text class="en" x="20" y="{212 + i * 18}">{escape(s)}</text>' for i, s in enumerate(spec["en"]))
-    zh = "".join(f'<text class="zh" x="20" y="{273 + i * 17}">{escape(s)}</text>' for i, s in enumerate(spec["zh"]))
+    zh = "".join(f'<text class="zh" x="20" y="{255 + i * 17}">{escape(s)}</text>' for i, s in enumerate(spec["zh"]))
     css = f"""
 .card{{fill:var(--surface);stroke:var(--border)}}
 .art{{fill:var(--panel)}}
@@ -386,18 +351,18 @@ def card(spec: dict) -> str:
 {art_css.strip()}
 """
     body = f"""
-<defs><clipPath id="top"><path d="M0 12a12 12 0 0 1 12-12h248a12 12 0 0 1 12 12v116H0z"/></clipPath></defs>
+<defs><clipPath id="top"><path d="M0 12a12 12 0 0 1 12-12h{width - 24}a12 12 0 0 1 12 12v116H0z"/></clipPath></defs>
 <rect class="card" x=".5" y=".5" width="{width - 1}" height="{height - 1}" rx="12"/>
 <g clip-path="url(#top)"><rect class="art" x="1" y="1" width="{width - 2}" height="127"/>
 {art.strip()}</g>
-<path class="rule" d="M1 128H271"/>
+<path class="rule" d="M1 128H{width - 1}"/>
 <text class="kicker" x="20" y="157">{escape(spec["kicker"])}</text>
 <text class="name" x="20" y="186">{escape(spec["name"])}</text>
-<path class="go" d="M244 158l8-8m-6.5 0h6.5v6.5"/>
+<path class="go" d="M{width - 28} 158l8-8m-6.5 0h6.5v6.5"/>
 {en}
 <g lang="zh-Hans">{zh}</g>
-<circle cx="24.5" cy="313" r="4.5" fill="{LANG_COLORS[spec["lang"]]}"/>
-<text class="meta" x="35" y="317">{spec["lang"]}<tspan dx="10">{escape(spec["tags"])}</tspan></text>
+<circle cx="24.5" cy="{height - 25}" r="4.5" fill="{LANG_COLORS[spec["lang"]]}"/>
+<text class="meta" x="35" y="{height - 21}">{spec["lang"]}<tspan dx="10">{escape(spec["tags"])}</tspan></text>
 """
     return svg(width, height, f'{spec["name"]}: {" ".join(spec["en"])}', css, body)
 

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="338" viewBox="0 0 272 338" role="img" aria-label="Sprig: A statically typed JVM language for people and coding agents: less to guess, easier to review.">
+<title>Sprig: A statically typed JVM language for people and coding agents: less to guess, easier to review.</title>
+<style>
+:root{--surface:#fbf9f5;--panel:#f1ede4;--border:#e2dbce;--ink:#1f2a44;--text:#414a63;--muted:#7d8497;--blue:#3b58a8;--sand:#a8753f;--tile:#ffffff;--sky0:#4463b8;--sky1:#324d98}@media (prefers-color-scheme:dark){:root{--surface:#131a2c;--panel:#19223b;--border:#283355;--ink:#f0eadf;--text:#c3cadb;--muted:#8790a7;--blue:#8fa8f0;--sand:#dbb488;--tile:#222d4d;--sky0:#34509c;--sky1:#243a78}}
+.card{fill:var(--surface);stroke:var(--border)}
+.art{fill:var(--panel)}
+.rule{stroke:var(--border)}
+.kicker{font:9.5px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;letter-spacing:.12em;fill:var(--sand)}
+.name{font:700 21px Georgia,'Times New Roman',Times,serif;fill:var(--ink)}
+.go{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.en{font:13px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;fill:var(--text)}
+.zh{font:12px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;fill:var(--muted)}
+.meta{font:11.5px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;fill:var(--text)}.meta tspan{fill:var(--muted)}
+.code{font:10px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;fill:var(--text);white-space:pre}
+.k{fill:var(--blue);font-weight:700}.t{fill:var(--ink)}.p{fill:var(--muted)}
+.fade0{stop-color:var(--panel);stop-opacity:0}.fade1{stop-color:var(--panel)}
+</style>
+<defs><clipPath id="top"><path d="M0 12a12 12 0 0 1 12-12h248a12 12 0 0 1 12 12v116H0z"/></clipPath></defs>
+<rect class="card" x=".5" y=".5" width="271" height="337" rx="12"/>
+<g clip-path="url(#top)"><rect class="art" x="1" y="1" width="270" height="127"/>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="fade0"/><stop offset="1" class="fade1"/></linearGradient>
+<g class="code"><text x="20" y="31" xml:space="preserve"><tspan class="k">variant</tspan> <tspan class="t">Shape</tspan><tspan class="p">:</tspan></text><text x="20" y="45.2" xml:space="preserve">    <tspan class="t">Circle</tspan><tspan class="p">(</tspan>radius<tspan class="p">: </tspan><tspan class="t">Float</tspan><tspan class="p">)</tspan></text><text x="20" y="59.4" xml:space="preserve">    <tspan class="t">Rect</tspan><tspan class="p">(</tspan>width<tspan class="p">: </tspan><tspan class="t">Float</tspan><tspan class="p">, </tspan>height<tspan class="p">: </tspan><tspan class="t">Float</tspan><tspan class="p">)</tspan></text><text x="20" y="87.8" xml:space="preserve"><tspan class="k">func</tspan> area<tspan class="p">(</tspan>shape<tspan class="p">: </tspan><tspan class="t">Shape</tspan><tspan class="p">) -&gt; </tspan><tspan class="t">Float</tspan><tspan class="p">:</tspan></text><text x="20" y="102" xml:space="preserve">    <tspan class="k">match</tspan> shape<tspan class="p">:</tspan></text><text x="20" y="116.2" xml:space="preserve">        <tspan class="k">case</tspan> <tspan class="t">Shape.Circle</tspan> <tspan class="k">as</tspan> circle<tspan class="p">:</tspan></text></g>
+<rect y="88" width="272" height="40" fill="url(#fade)"/></g>
+<path class="rule" d="M1 128H271"/>
+<text class="kicker" x="20" y="157">LANGUAGE · JVM</text>
+<text class="name" x="20" y="186">Sprig</text>
+<path class="go" d="M244 158l8-8m-6.5 0h6.5v6.5"/>
+<text class="en" x="20" y="212">A statically typed JVM language</text><text class="en" x="20" y="230">for people and coding agents:</text><text class="en" x="20" y="248">less to guess, easier to review.</text>
+<g lang="zh-Hans"><text class="zh" x="20" y="273">面向人和编码 Agent 的 JVM 静态类型</text><text class="zh" x="20" y="290">语言：少一点猜测，方便审查。</text></g>
+<circle cx="24.5" cy="313" r="4.5" fill="#b07219"/>
+<text class="meta" x="35" y="317">Java<tspan dx="10">ANTLR4 · Fabric</tspan></text>
+</svg>

@@ -1,115 +1,64 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=7AA2F7&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Syrinx+%F0%9F%91%8B;Backend+%2F+Web+Engineer+in+Tokyo;%E5%9C%A8%E4%B8%9C%E4%BA%AC%E8%AF%BB%E7%A0%94%E7%9A%84%E5%90%8E%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88;I+build+languages%2C+APIs+and+tools" alt="Typing SVG" />
+<img src="assets/banner.svg" width="100%" alt="Syrinx. /ˈsɪrɪŋks/ — with a stylized mel spectrogram of the word “syrinx”.">
 
-<br/>
+**Backend / web engineer in Tokyo. I build languages, APIs and tools.**<br>
+在东京读研的后端工程师，造语言、写 API、做工具。
 
-[![Profile views](https://komarev.com/ghpvc/?username=ColinHouse&color=7aa2f7&style=flat-square&label=Visitors)](https://github.com/ColinHouse)
-[![ORCID](https://img.shields.io/badge/ORCID-0009--0005--2312--1336-A6CE39?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0005-2312-1336)
-[![Location](https://img.shields.io/badge/Tokyo-The%20University%20of%20Tokyo-1e2327?style=flat-square&logo=googlemaps&logoColor=white)](#)
-
-</div>
-
----
-
-## 🧭 About · 关于我
-
-- 🎓 Master's student at **The University of Tokyo** (EEIS), graduating 2028
-  硕士在读 · **东京大学** 电气系工学专攻，28 卒
-- 🔬 Physics background → research on the internal representations of speech SSL models
-  物理本科 → 现在研究语音自监督学习模型的内部表征
-- 💻 Writing backend services with **FastAPI / Spring Boot**, and a programming language of my own
-  平时用 **FastAPI / Spring Boot** 写后端，顺便自己造了一门语言
-- 🌏 Working languages: 中文 · English · 日本語
-
----
-
-## 🚀 Featured Projects · 代表项目
-
-<div align="center">
-
-[![Sprig](https://github-readme-stats.vercel.app/api/pin/?username=ColinHouse&repo=Sprig&theme=tokyonight&hide_border=true)](https://github.com/ColinHouse/Sprig)
-[![kotobako](https://github-readme-stats.vercel.app/api/pin/?username=ColinHouse&repo=kotobako&theme=tokyonight&hide_border=true)](https://github.com/ColinHouse/kotobako)
-[![personal_ledger_api](https://github-readme-stats.vercel.app/api/pin/?username=ColinHouse&repo=personal_ledger_api&theme=tokyonight&hide_border=true)](https://github.com/ColinHouse/personal_ledger_api)
+[ORCID](https://orcid.org/0009-0005-2312-1336) · [Sprig docs](https://colinhouse.github.io/Sprig/) · [kotobako docs](https://colinhouse.github.io/kotobako/)
 
 </div>
 
-| Project | What it is · 简介 |
-|---|---|
-| **Sprig** | A statically-typed JVM language with an ANTLR4 front end — you can write Minecraft (Fabric) mods in it. <br/> 自己设计的静态类型 JVM 语言，ANTLR4 前端，可以直接写 Minecraft 模组。 |
-| **kotobako** | Local-first Japanese sentence-mining companion (FastAPI + Vue3 + PWA) with FSRS review and Anki export. <br/> 会记住语境的日语伴读工具：截图 + 原声收集台词，FSRS 复习，可导出 Anki。 |
-| **personal_ledger_api** | Household ledger REST API built with Spring Boot + MySQL + MyBatis-Plus. <br/> Spring Boot + MySQL + MyBatis-Plus 实现的家計簿 API。 |
+## About · 关于我
 
----
+- **Master's student at The University of Tokyo** (EEIS), graduating in 2028.<br>
+  <sub>东京大学 电气系工学专攻 硕士在读，28 卒。</sub>
+- **Physics background, now speech.** I study the internal representations of self-supervised speech models.<br>
+  <sub>物理本科，现在研究语音自监督学习模型的内部表征。</sub>
+- **Backend services** with FastAPI and Spring Boot, plus a programming language of my own.<br>
+  <sub>平时用 FastAPI / Spring Boot 写后端，顺便自己造了一门语言。</sub>
+- **Working languages:** 中文 · English · 日本語
 
-## 🤝 Open Source Contributions · 开源贡献
+## Projects · 代表项目
 
-<div align="center">
+<p align="center">
+  <a href="https://github.com/ColinHouse/Sprig"><img src="assets/sprig.svg" width="272" alt="Sprig: a statically typed JVM language for people and coding agents. Less to guess, easier to review."></a>
+  <a href="https://github.com/ColinHouse/kotobako"><img src="assets/kotobako.svg" width="272" alt="kotobako: a context-keeping Japanese reading companion with screenshot and audio capture and FSRS review."></a>
+  <a href="https://github.com/ColinHouse/personal_ledger_api"><img src="assets/ledger.svg" width="272" alt="Personal Ledger API: a household-ledger REST API with accounts, categories, records and monthly budgets."></a>
+</p>
 
-[![Contributor stats](https://github-contributor-stats.vercel.app/api?username=ColinHouse&limit=6&theme=tokyonight&hide_border=true&combine_all_yearly_contributions=true)](https://github.com/ColinHouse)
+## Open source · 开源贡献
 
-</div>
+Pull requests merged into other people's projects.<br>
+<sub>合并进上游项目的 PR。</sub>
 
----
+<!-- upstream:start -->
+| Project | Merged | Latest pull request |
+|:--|:-:|:--|
+| [**langgenius/dify**](https://github.com/langgenius/dify)&nbsp;<sub>★&nbsp;158k</sub> | [3](https://github.com/langgenius/dify/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [refactor(files): dep-inject query params with @model_validate](https://github.com/langgenius/dify/pull/42314) |
+| [**sqlfluff/sqlfluff**](https://github.com/sqlfluff/sqlfluff)&nbsp;<sub>★&nbsp;9.9k</sub> | [1](https://github.com/sqlfluff/sqlfluff/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [Add sparksql fixtures for CREATE TEMPORARY TABLE with a USING provider](https://github.com/sqlfluff/sqlfluff/pull/8656) |
+| [**MaaXYZ/MaaFramework**](https://github.com/MaaXYZ/MaaFramework)&nbsp;<sub>★&nbsp;5.0k</sub> | [1](https://github.com/MaaXYZ/MaaFramework/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(python): 修复绑定初始化的线程竞态导致并发连接失败 (#629)](https://github.com/MaaXYZ/MaaFramework/pull/1490) |
+| [**AUTO-MAS-Project/AUTO-MAS**](https://github.com/AUTO-MAS-Project/AUTO-MAS)&nbsp;<sub>★&nbsp;703</sub> | [3](https://github.com/AUTO-MAS-Project/AUTO-MAS/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(bettergi): 单个 JS 脚本的 manifest.json 坏了不再让整个脚本列表拿不到](https://github.com/AUTO-MAS-Project/AUTO-MAS/pull/783) |
+<!-- upstream:end -->
 
-## 🛠️ Tech Stack · 技术栈
+## Activity · 动态
 
-<div align="center">
+<img src="assets/activity.svg" width="100%" alt="Contributions over the last 12 weeks, drawn as a waveform.">
 
-<img src="https://skillicons.dev/icons?i=python,java,fastapi,spring,vue,ts,mysql,docker,git,githubactions,linux,pytorch&perline=12" alt="Tech stack" />
+## Toolbox · 技术栈
 
-</div>
-
----
-
-## 📈 Stats · 统计
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ColinHouse&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ColinHouse&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" alt="Top languages" />
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=ColinHouse&theme=tokyonight&hide_border=true" alt="GitHub streak" />
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=ColinHouse&theme=tokyo-night&hide_border=true&area=true" alt="Activity graph" />
-
-</div>
-
----
-
-## ⚡ Recent Activity · 最近动态
-
-<!--START_SECTION:activity-->
-1. 💪 Opened PR [#92](https://github.com/ColinHouse/Sprig/pull/92) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
-2. 💪 Opened PR [#91](https://github.com/ColinHouse/Sprig/pull/91) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
-3. ℹ️ Labeled issue [#90](https://github.com/ColinHouse/Sprig/issues/90) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
-4. ℹ️ Labeled issue [#90](https://github.com/ColinHouse/Sprig/issues/90) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
-5. ❗ Opened issue [#90](https://github.com/ColinHouse/Sprig/issues/90) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
-6. 🎉 Merged PR [#89](https://github.com/ColinHouse/Sprig/pull/89) in [ColinHouse/Sprig](https://github.com/ColinHouse/Sprig)
-<!--END_SECTION:activity-->
-
----
-
-## 🐍 Contribution Snake · 贡献贪吃蛇
+<table>
+  <tr><td><b>Languages</b></td><td><kbd>Python</kbd> <kbd>Java</kbd> <kbd>TypeScript</kbd></td></tr>
+  <tr><td><b>Backend</b></td><td><kbd>FastAPI</kbd> <kbd>Spring Boot</kbd> <kbd>MyBatis-Plus</kbd> <kbd>MySQL</kbd></td></tr>
+  <tr><td><b>Frontend</b></td><td><kbd>Vue 3</kbd> <kbd>PWA</kbd></td></tr>
+  <tr><td><b>Research</b></td><td><kbd>PyTorch</kbd></td></tr>
+  <tr><td><b>Tooling</b></td><td><kbd>ANTLR4</kbd> <kbd>Docker</kbd> <kbd>GitHub Actions</kbd> <kbd>Linux</kbd> <kbd>Git</kbd></td></tr>
+</table>
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ColinHouse/ColinHouse/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ColinHouse/ColinHouse/output/github-snake.svg" />
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/ColinHouse/ColinHouse/output/github-snake-dark.svg" />
-</picture>
+<sub>Fig. 1 is a stylized mel spectrogram of the word “syrinx”. The figures on this page are SVGs drawn by <a href="https://github.com/ColinHouse/ColinHouse/blob/main/scripts/build.py">one small script</a> in this repo.</sub>
 
-</div>
-
----
-
-<div align="center">
-
-*Thanks for stopping by · 感谢来访* ☕
+<sub>Thanks for stopping by · 感谢来访</sub>
 
 </div>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="272" height="338" viewBox="0 0 272 338" role="img" aria-label="kotobako: A context-keeping Japanese reading companion: screenshot + audio capture, FSRS review.">
+<title>kotobako: A context-keeping Japanese reading companion: screenshot + audio capture, FSRS review.</title>
+<style>
+:root{--surface:#fbf9f5;--panel:#f1ede4;--border:#e2dbce;--ink:#1f2a44;--text:#414a63;--muted:#7d8497;--blue:#3b58a8;--sand:#a8753f;--tile:#ffffff;--sky0:#4463b8;--sky1:#324d98}@media (prefers-color-scheme:dark){:root{--surface:#131a2c;--panel:#19223b;--border:#283355;--ink:#f0eadf;--text:#c3cadb;--muted:#8790a7;--blue:#8fa8f0;--sand:#dbb488;--tile:#222d4d;--sky0:#34509c;--sky1:#243a78}}
+.card{fill:var(--surface);stroke:var(--border)}
+.art{fill:var(--panel)}
+.rule{stroke:var(--border)}
+.kicker{font:9.5px ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;letter-spacing:.12em;fill:var(--sand)}
+.name{font:700 21px Georgia,'Times New Roman',Times,serif;fill:var(--ink)}
+.go{fill:none;stroke:var(--muted);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.en{font:13px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;fill:var(--text)}
+.zh{font:12px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;fill:var(--muted)}
+.meta{font:11.5px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;fill:var(--text)}.meta tspan{fill:var(--muted)}
+.tile text{font:600 24px 'Hiragino Sans','Yu Gothic','Noto Sans CJK JP','Noto Sans JP',-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,'Noto Sans',sans-serif;text-anchor:middle;fill:var(--ink)}
+.shade{fill:var(--border)}.face{fill:var(--tile);stroke:var(--border)}
+.hot .face{fill:var(--blue);stroke:var(--blue)}.hot text{fill:var(--surface)}
+.line{stroke:var(--border);stroke-width:1.4}
+.done,.due{stroke:var(--blue);stroke-width:1.4}.done{fill:var(--blue)}.due{fill:var(--panel);stroke-opacity:.55}
+</style>
+<defs><clipPath id="top"><path d="M0 12a12 12 0 0 1 12-12h248a12 12 0 0 1 12 12v116H0z"/></clipPath></defs>
+<rect class="card" x=".5" y=".5" width="271" height="337" rx="12"/>
+<g clip-path="url(#top)"><rect class="art" x="1" y="1" width="270" height="127"/>
+<g lang="ja"><g class="tile" transform="rotate(-4 58 52)"><rect class="shade" x="37" y="29" width="42" height="50" rx="8"/><rect class="face" x="37" y="26" width="42" height="50" rx="8"/><text x="58" y="59">こ</text></g><g class="tile" transform="rotate(3 110 52)"><rect class="shade" x="89" y="29" width="42" height="50" rx="8"/><rect class="face" x="89" y="26" width="42" height="50" rx="8"/><text x="110" y="59">と</text></g><g class="tile hot" transform="rotate(-3 162 52)"><rect class="shade" x="141" y="29" width="42" height="50" rx="8"/><rect class="face" x="141" y="26" width="42" height="50" rx="8"/><text x="162" y="59">ば</text></g><g class="tile" transform="rotate(4 214 52)"><rect class="shade" x="193" y="29" width="42" height="50" rx="8"/><rect class="face" x="193" y="26" width="42" height="50" rx="8"/><text x="214" y="59">こ</text></g></g><path class="line" d="M37 103H235"/><circle class="done" cx="37" cy="103" r="3.2"/><circle class="done" cx="47" cy="103" r="3.2"/><circle class="done" cx="63" cy="103" r="3.2"/><circle class="due" cx="89" cy="103" r="3.2"/><circle class="due" cx="131" cy="103" r="3.2"/><circle class="due" cx="199" cy="103" r="3.2"/></g>
+<path class="rule" d="M1 128H271"/>
+<text class="kicker" x="20" y="157">APP · LOCAL-FIRST</text>
+<text class="name" x="20" y="186">kotobako</text>
+<path class="go" d="M244 158l8-8m-6.5 0h6.5v6.5"/>
+<text class="en" x="20" y="212">A context-keeping Japanese</text><text class="en" x="20" y="230">reading companion: screenshot</text><text class="en" x="20" y="248">+ audio capture, FSRS review.</text>
+<g lang="zh-Hans"><text class="zh" x="20" y="273">会记住语境的日语伴读工具：</text><text class="zh" x="20" y="290">截图 + 原声收藏台词，FSRS 复习。</text></g>
+<circle cx="24.5" cy="313" r="4.5" fill="#3572a5"/>
+<text class="meta" x="35" y="317">Python<tspan dx="10">FastAPI · Vue 3 · PWA</tspan></text>
+</svg>

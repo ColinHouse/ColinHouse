@@ -1,0 +1,38 @@
+name: Refresh profile figures
+
+on:
+  schedule:
+    - cron: "17 21 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/**
+      - .github/workflows/refresh.yml
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Redraw figures and the upstream table
+        run: python3 scripts/build.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit if anything changed
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md assets
+            git commit -m "chore: refresh profile figures"
+            git push
+          fi

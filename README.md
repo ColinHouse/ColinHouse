@@ -34,7 +34,7 @@ Pull requests merged into other people's projects.<br>
 <!-- upstream:start -->
 | Project | Merged | Latest pull request |
 |:--|:-:|:--|
-| [**langgenius/dify**](https://github.com/langgenius/dify)&nbsp;<sub>★&nbsp;161k</sub> | [3](https://github.com/langgenius/dify/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [refactor(files): dep-inject query params with @model_validate](https://github.com/langgenius/dify/pull/42314) |
+| [**langgenius/dify**](https://github.com/langgenius/dify)&nbsp;<sub>★&nbsp;162k</sub> | [3](https://github.com/langgenius/dify/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [refactor(files): dep-inject query params with @model_validate](https://github.com/langgenius/dify/pull/42314) |
 | [**sqlfluff/sqlfluff**](https://github.com/sqlfluff/sqlfluff)&nbsp;<sub>★&nbsp;10k</sub> | [2](https://github.com/sqlfluff/sqlfluff/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [Add an RF06 case for a case-sensitive quoted alias in Oracle](https://github.com/sqlfluff/sqlfluff/pull/8655) |
 | [**MaaXYZ/MaaFramework**](https://github.com/MaaXYZ/MaaFramework)&nbsp;<sub>★&nbsp;5.2k</sub> | [1](https://github.com/MaaXYZ/MaaFramework/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(python): 修复绑定初始化的线程竞态导致并发连接失败 (#629)](https://github.com/MaaXYZ/MaaFramework/pull/1490) |
 | [**future-agi/future-agi**](https://github.com/future-agi/future-agi)&nbsp;<sub>★&nbsp;2.3k</sub> | [1](https://github.com/future-agi/future-agi/pulls?q=is%3Apr+is%3Amerged+author%3AColinHouse) | [fix(evals): decode m4a/aac audio in dead_air_detection [agent]](https://github.com/future-agi/future-agi/pull/3318) |
